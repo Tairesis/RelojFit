@@ -6,11 +6,24 @@
 package relojfit;
 
 public class Persona {
+
     private String nombre;
     private String apellido;
     private int edad;
     private double altura;
-    
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
     private Reloj reloj1;
 
     public Persona(String nombre, Reloj reloj1) {
@@ -18,11 +31,15 @@ public class Persona {
         this.reloj1 = reloj1;
     }
 
-    public void verHora() {
+    public void decirHora() {
         System.out.println(nombre + " ve la hora: " + reloj1.getHora());
     }
 
-    public void verDia() {
-        System.out.println(nombre + " ve el día: " + reloj1.getDia());
+    public void comer() {
+
+    }
+
+    public void hablar() {
+
     }
 }
